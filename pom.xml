@@ -123,6 +123,9 @@
         <developerConnection>scm:git:git@github.com:WebGoat/WebGoat.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+	
+	
+	
 
     <issueManagement>
         <system>Github Issues</system>
