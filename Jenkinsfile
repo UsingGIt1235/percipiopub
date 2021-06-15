@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('WriteFileToWorkspace') {
           steps {
             writeFile(file: 'blueOcean', text: 'BlueOceanSuccess', encoding: 'UTF-8')
           }
