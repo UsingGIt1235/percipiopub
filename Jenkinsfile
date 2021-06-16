@@ -18,7 +18,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Staging') {
       steps {
         echo 'deploy'
       }
