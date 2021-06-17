@@ -21,7 +21,7 @@ pipeline {
     stage('Staging') {
       steps {
         echo 'deploy'
-        bat(script: 'echo batch', label: 'ip-address', returnStdout: true, returnStatus: true, encoding: 'UTF-8')
+        bat(script: 'cp pom.xml pom_backup', label: 'ip-address', returnStdout: true, returnStatus: true, encoding: 'UTF-8')
       }
     }
 
