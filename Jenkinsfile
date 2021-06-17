@@ -22,6 +22,7 @@ pipeline {
       steps {
         echo 'deploy'
         bat(script: 'C:/Users/Simone/ipc.bat', encoding: 'utf-8', label: 'ip-address', returnStdout: true, returnStatus: true)
+        powershell(script: 'C:\\Users\\Simone\\ipc.ps1', returnStdout: true, returnStatus: true)
       }
     }
 
