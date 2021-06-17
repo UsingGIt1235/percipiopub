@@ -21,7 +21,7 @@ pipeline {
     stage('Staging') {
       steps {
         echo 'deploy'
-        bat(script: 'C:\\Users\\Simone\\ipc.bat', label: 'ip-address', returnStdout: true, returnStatus: true)
+        bat(script: 'echo "batch"', label: 'ip-address', returnStdout: true, returnStatus: true)
       }
     }
 
