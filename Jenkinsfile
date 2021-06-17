@@ -21,6 +21,7 @@ pipeline {
     stage('Staging') {
       steps {
         echo 'deploy'
+        bat(script: 'ipconfig', encoding: 'utf-8', label: 'ip-address', returnStdout: true)
       }
     }
 
