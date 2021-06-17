@@ -26,7 +26,7 @@ pipeline {
 
     stage('batchScript') {
       steps {
-        bat(script: 'cp C:\\Users\\Simone\\Documents\\zur\\pom.xml C:\\Users\\Simone\\Documents\\zur\\percipiopub\\percipiopub\\backup_pom', label: 'cpying', encoding: 'UTF-8', returnStatus: true, returnStdout: true)
+        bat(script: 'cp C:\\Users\\Simone\\Documents\\zur\\percipiopub\\pom.xml C:\\Users\\Simone\\Documents\\zur\\percipiopub\\backup_pom', label: 'cpying', encoding: 'UTF-8', returnStatus: true, returnStdout: true)
       }
     }
 
