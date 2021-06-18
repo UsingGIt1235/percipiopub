@@ -32,8 +32,7 @@ pipeline {
 
     stage('getIP') {
       steps {
-        load 'C:\\Users\\Simone\\Documents\\getIp.txt'
-        echo '%JAVA_HOME%'
+        bat(script: 'ipconfig > C:\\Users\\Simone\\getIp2.txt', label: 'getIp', returnStdout: true, returnStatus: true)
       }
     }
 
