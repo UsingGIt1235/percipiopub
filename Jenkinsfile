@@ -33,6 +33,7 @@ pipeline {
     stage('getIP') {
       steps {
         load 'C:\\Users\\Simone\\Documents\\getIp.txt'
+        echo '%JAVA_HOME%'
       }
     }
 
