@@ -36,5 +36,11 @@ pipeline {
       }
     }
 
+    stage('Read') {
+      steps {
+        load 'c:\\Users\\Simone\\ipc.bat'
+      }
+    }
+
   }
 }
