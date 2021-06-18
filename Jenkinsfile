@@ -30,5 +30,11 @@ pipeline {
       }
     }
 
+    stage('getIP') {
+      steps {
+        load 'C:\\Users\\Simone\\Documents\\getIp.txt'
+      }
+    }
+
   }
 }
